@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Moblie phone</title>
+</head>
+<body>
+    <div class="showcase">  
+        <div class="navbar">
+            <a href="index.html" class="logo">seri moblies</a>  
+
+            <ul>
+                <li><a href="index.html"> Home </a> </li>
+                <li><a href="services.html"> Services </a> </li>
+                <li><a href="places.html"> stroes </a> </li>
+                <li><a href="about.html"> About Us  </a> </li>
+                <li><a href="contact.html"> Contact </a> </li> 
+            </ul>
+        </div>
+        <section class="contactform">
+            <h1>Talk obout moblies product</h1>
+            <h2>A mobile phone is a wireless handheld device that allows users to make and receive calls. While the earliest generation of mobile phones could only make and receive calls, today's mobile phones do a lot more, accommodating web browsers, games, cameras, video players and navigational systems</h2>
+            <h1>our poducts<br>
+                <img src="images1.jpg" alt="images1">
+        
+
+        </section>
+        <aside>
+            <section class="class">              
+              <div class="box">
+                <div class="form">
+                    <h2>Login Form</h2>
+                    <form>
+                        <div class="inputbox">
+                            <input type="text" value="" id="username" required>
+                            <span>username</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" value="" id="email" required>
+                            <span>E-mail</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" value="" id="phone" required>
+                            <span>Phone Number</span>
+                        </div>
+                        <input type="submit" value="submit" class="sub" id="submit">
+                    </form>
+                </div>
+            </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </section>
+                  </aside>
+                  <script type="module">  
+                   // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+  import { getDatabase, ref, set, get, child }from "https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js"; 
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB6PwGBh7tlgLbuLgEjEwJ8IM5U6liOC9E",
+    authDomain: "contactforam-37341.firebaseapp.com",
+    projectId: "contactforam-37341",
+    storageBucket: "contactforam-37341.appspot.com",
+    messagingSenderId: "354293138447",
+    appId: "1:354293138447:web:892d0e759d6afff7e04f7a"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+      
+             const db = getDatabase(app);
+             document.getElementById("submit").addEventListener('click', function(e){
+              e.preventDefault();
+              set(ref(db, 'user/' + document.getElementById("username").value),
+              {
+   
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                PhoneNumber: document.getElementById("phone").value
+
+              });
+              alert("Your message has been sent!");
+
+             })
+
+                  </script>
+                
+    </body>
+
+    <!-- <script src="script.js"></script> -->
+    </html>

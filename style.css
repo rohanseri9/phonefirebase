@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.showcase {
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navbar ul li {
+    font-size: 16px;
+    padding: 10px;
+    /* display: flex; */
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left:0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.site{
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    background-color: #89d1bf;
+}
+.site::after{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(0,0,0,0.1);
+}
+.phone{
+    --black5:#404040;
+    --black4:#505050;
+    z-index: 1;
+    width: 13rem;
+    height: 24rem;
+    padding: 0 0.5rem;
+    border: 0.25rem solid var(--black5);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+    box-shadow: 0.5rem 0.5rem rgb(0,0,0,0.3);
+    transition: all 0.3s;
+}
+.phone-loooooong{
+    height: 100%;
+}
+.phone_mic{
+    height: 0.25rem;
+    width: 4rem;
+    margin: 1rem auto;
+    border-radius: 999rem;
+    background-color: var(--black4);
+}
+.phone_screen{
+    position: relative;
+    flex:1 0 auto;
+    background-color: var(--black4);
+}
+.phone_screen::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.3);
+    clip-path: polygon(70% 0,100% 0%,100% 100%,30% 100%);
+}
+.phone_button{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--black4);
+    border-radius: 50%;
+    margin: 1rem auto;
+    
+}
+.phone_button button{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--black4);
+    border-radius: 50%;
+    margin: 1rem auto;
+    
+}
+
+.contactform{
+    width: auto;
+    height: auto;
+text-align: center;
+ background-color: rgb(58, 19, 230);
+ opacity: 0.;
+ font-family: monospace;
+}
+section.contactform{
+    float: left;
+    width: 659px;
+    border-right: 1px solid #eeeeee;
+    background-color: white;
+}
+img.location{
+    float: left;
+    
+}
+h2.idi{
+    float: left;    
+    margin-top: 60px;
+
+}
+aside{
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+    width: 80vh;
+}
+ aside section.class{
+    display: block;
+    padding: 10px;
+    font-size: medium;
+ }
+ .box
+{
+    padding: 20px 30px;
+    width: 300px;
+    height: 400px;
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    background: rgba(49, 49, 49, .2);
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+.box .form
+{
+    padding: 10px 20px;
+}
+.box .form h2
+{
+    text-align: center;
+    color: #fff;
+}
+.box .form form
+{
+    margin-top: 50px;
+    align-items: center;
+}
+.box .form form .inputbox input
+{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #12151e;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.box .form form .inputbox span
+{
+    position: absolute;
+    transform: translateY(-80px);
+    font-size: 14px;
+    color: #fff;
+}
+.box .form form .sub
+{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #0cc0df;
+    cursor: pointer;
+    font-size: 16px;
+}
