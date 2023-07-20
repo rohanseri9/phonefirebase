@@ -250,3 +250,29 @@ aside{
     font-weight: 900;
     display: none;
 }
+ .responsive{
+    width: 50%;
+    height: 70vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  0px 5px 25px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 30px 10px 20px;
+} 
+ .apple{
+    width: 600px;
+    height: 340px;
+     margin: 10px 30px 10px 20px;
+}
+
+.alert.row{
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+    width: 80vh;
+}
+
+
